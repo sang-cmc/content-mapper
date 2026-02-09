@@ -191,9 +191,9 @@ const Page = ({ sdk }) => {
               <Select.Option value="">-- Select an entry --</Select.Option>
               {sourceEntries.map((entry) => {
                 // Try to find a displayable field
-                const displayField = entry.fields.title || entry.fields.name || entry.fields;
-                const displayValue = displayField
-                  ? Object.values(displayField)[0]
+                const titleField = entry.fields?.title || entry.fields?.name;
+                const displayValue = titleField
+                  ? Object.values(titleField)[0]
                   : entry.sys.id;
                 return (
                   <Select.Option key={entry.sys.id} value={entry.sys.id}>

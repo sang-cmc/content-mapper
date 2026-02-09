@@ -69,7 +69,7 @@ The app will confirm which fields are ready for mapping. In a production impleme
 ### Limitations
 - Maximum 100 entries loaded per content type
 - Field preview limited to 50 characters
-- Requires published entries (drafts not shown)
+- Shows all entries (both published and draft)
 
 ## Configuration
 
